@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.license      = 'MIT'
   s.author       = { "Seivan Heidari" => "seivan.heidari@icloud.com" }
-  
+
   s.source       = { :git => git_url, :tag => version}
   s.platform     = :ios, '5.0'
 
@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
 
   s.dependency  'AFOAuth1Client',         '~> 0.2.0'
   s.dependency  'SHOmniAuth',             '~> 0.2.0'
-  s.dependency  'SHAccountStore',         '~> 0.1.0'
+  s.dependency  'SHAccountStore',         '~> 0.2.0'
   s.dependency  'SHRequest',              '~> 0.2.0'
 end
