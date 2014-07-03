@@ -1,12 +1,6 @@
 Pod::Spec.new do |s|
-  name         = "SHOmniAuthLinkedIn"
-  url          = "https://github.com/seivan/#{name}"
-  git_url      = "#{url}.git"
-  version      = "0.2.6"
-  source_files = "#{name}/**/*.{h,m}"
-
-  s.name         = name
-  s.version      = version
+  s.name         = "SHOmniAuthLinkedIn"
+  s.version      = "0.2.6"
   s.summary      = "LinkedIn Strategy for SHOmniAuth, uses SHAccountStore."
 
   s.description  = <<-DESC
@@ -15,13 +9,13 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/seivan/SHOmniAuthLinkedIn"
 
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = { "Seivan Heidari" => "seivan.heidari@icloud.com" }
 
-  s.source       = { :git => git_url, :tag => version}
+  s.source       = { :git => "https://github.com/seivan/SHOmniAuthLinkedIn.git", :tag => "0.2.6"}
   s.platform     = :ios, '5.0'
 
-  s.source_files = source_files
+  s.source_files = "SHOmniAuthLinkedIn/**/*.{h,m}"
   s.requires_arc = true
 
   s.dependency  'AFOAuth1Client',         '~> 0.2.0'
